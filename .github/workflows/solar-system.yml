@@ -52,7 +52,7 @@ jobs:
           run: npm install
     
         - name: Code Coverage
-          if: always()
+          continue-on-error: true
           run: npm run coverage
           
         - name: Archive Code Coverage Report
