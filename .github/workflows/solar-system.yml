@@ -53,7 +53,7 @@ jobs:
     
         - name: Code Coverage
           if: always()
-          run: npm run code-coverage
+          run: npm run coverage
           
         - name: Archive Code Coverage Report
           if: always()
